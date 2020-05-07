@@ -10,19 +10,26 @@
 		document.getElementById("e").style.background="white";
 		document.getElementById("f").style.background="white";
 		document.getElementById("g").style.background="white";
+		document.getElementById("h").style.background="white";
+		document.getElementById("i").style.background="white";
+		document.getElementById("j").style.background="white";
+		document.getElementById("k").style.background="white";
+		document.getElementById("l").style.background="white";
+		document.getElementById("m").style.background="white";
+		document.getElementById("n").style.background="white";
 	}
 	function test()
 	{
 	var x=document.getElementById("inpp").value;
-	if(x<=99 && x>=0){
+	if(x[0]<=9 && x[0]>=0){
 	
 	if (x[0]=="0"){
-		document.getElementById("a").style.background="black";
-		document.getElementById("b").style.background="black";
-		document.getElementById("c").style.background="black";
-		document.getElementById("d").style.background="black";
-		document.getElementById("e").style.background="black";
-		document.getElementById("f").style.background="black";
+	document.getElementById("a").style.background="black";
+	document.getElementById("b").style.background="black";
+	document.getElementById("c").style.background="black";
+	document.getElementById("d").style.background="black";
+	document.getElementById("e").style.background="black";
+	document.getElementById("f").style.background="black";
 	}
 	else if (x[0]=="1"){
 	document.getElementById("a").style.background="black";
@@ -85,7 +92,9 @@
 	document.getElementById("b").style.background="black";
 	document.getElementById("a").style.background="black";
 	}
-	else if (x[1]=="0"){
+	}
+	if(x[1]<=9 && x[1]>=0){
+	if (x[1]=="0"){
 		document.getElementById("h").style.background="black";
 		document.getElementById("i").style.background="black";
 		document.getElementById("j").style.background="black";
@@ -155,8 +164,8 @@
 	document.getElementsByClass("h").style.background="black";
 	}
 	}
-	else{
-	alert("write a no between 0 and 9");
+	if(x>99){
+	alert("write a no between 0 and 99");
 	}
 	}
 </script>
